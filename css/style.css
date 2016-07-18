@@ -1,3 +1,9 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size:14px;
+
+	}
+
 /* common classes */
 .divHeight{
 	height:100%;
@@ -7,101 +13,244 @@
 	color: white;
 }
 
+.content{
+	padding:70px;
+}
 
+h1{
+	font-size:3em;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+h4{
+	font-weight:900;
+	font-size:1.2em;
+}
+h6{
+	font-size:1.2em;
+	color:gray;
+	padding: 20px 0;
+	font-style: italic;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+p{
+	color:gray;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+.btn {
+	color:white;
+	text-transform: uppercase;
+	background-color:#FED136;
+	border-radius: 2px;
+	padding: 20px 25px;
+	margin:30px;
+	font-weight: bold;
+}
+
+.btn:hover{
+	color:white;
+	background-color:#FEC503;
+}
+
+#team i,
+#footer i{
+	color:white;
+	border-radius:50%;
+	background-color: #222222;
+	height:45px;
+	width:45px;
+	padding:7px; 
+	margin:4px;
+}
+
+#team i:hover,
+#footer i:hover{
+	background-color: #FEC503
+}
+
+#team .mainColor,
+#portfolio .mainColor,
+#contact .mainColor{
+	background-color: #EEEEEE;
+}
+/***********************Main************8*******/
 #main{
 	background-image: url("../image/header.jpg");
 	background-size: cover;
-
+	background-position: center;
+	font-family: 'Open Sans', sans-serif;
 }
 #main .container-fluid{
 	padding: 0px;
 }
 #main .navbar{
 	border-radius: 0px;
+	padding:10px;
+}
+#main .navbar-inverse{
+	border:none;
+	background: #222222;
+}
+
+#main .navbar-inverse .navbar-nav li{
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.navbar-inverse .navbar-header>a{
+	 color: #FED12E;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse  .navbar-header>a:hover{
+  color: #FED12E;
+  }
+
+
+
+/***************Slider***********/
+#main .content{
+	padding: 130px 0;
 }
 
 #main h3 {
 	font-style: italic;
+	font-weight: bold;
 	font-size: 3em;
 }
 #main h1 {
-	font-size: 5em;
-	font-weight: 700;
-}
-#main .btn {
-	border-radius: 0;
-	padding: 20px;
-}
-#main .content{
-	padding: 50px 0;
+	font-size: 5.5em;
+	font-weight: 800;
 }
 
+
+
+/************Services**********/
 
 #services {
 }
 
-#services .mainColor{
-background-color: white;
-}
-#services h1 {
-	text-transform: uppercase;
-	font-weight: 700;
-}
 #services i{
 	color: white;
 	background-color: #FED136;
-	border-radius: 100%;
-	padding:30px;
-}
-
-#services h6 {
-	padding: 20px 0;
-	font-style: italic;
-
-}
-#services .content {
-	padding: 50px 0;
+	border-radius: 50%;
+	line-height:90px;
+	width:90px;
 }
 
 
+/**********Portfolio********/
 
 #portfolio {
 	
 }
-#portfolio .mainColor{
-	background-color: lightgray;
-}
 
-#portfolio .content {
-	padding: 50px 0;
-}
-
-#portfolio h1 {
-	text-transform: uppercase;
-	font-weight: 700;
-}
-
-#portfolio h6 {
-	padding: 20px 0;
-	font-style: italic;
-}
-
-
+/******About******/
 #about{
-	height: 1000px;
+	}
+
+#about img{
+	width:95%;
+	border-radius:50%;
+	border: 7px solid #F1F1F1;
 }
-#about .mainColor{
-	background-color: yellow;
+
+#about .row{
+	padding:30px;
 }
+
+#about .circle{
+	width:130px;
+	height:130px;
+	background: #FED136;
+	border-radius:50%;
+	border: 7px solid #F1F1F1;
+}
+.circle div{
+	padding:20px;
+}
+
+.circle span{
+	
+	font-weight: bold;
+	color:white;
+	font-size:1.2em;
+}
+
+/*************Team*************/
 #team{
-	height: 800px;
+	
 }
-#team .mainColor{
-	background-color: red;
+
+
+#team .row{
+	padding:20px 0px;
 }
-#contact{
-	height: 500px;
+
+#team img{
+	border: 6px solid white;
 }
-#contact .mainColor{
-	background-color: gray;
+
+
+/******Sponcor*******/
+#sponsor {
+
+}
+
+
+#sponsor img{
+	width:80%;
+}
+
+/******Contact******/
+#contact {
+	height:auto;
+	
+}
+
+#contact .container-fluid{
+	background: url("../image/img5_files/map.jpg" );
+	background-position: center;
+}
+
+#contact h1{
+	color:white;
+}
+
+#contact .form-group input{
+	padding:28px;
+}
+
+#contact .form-group textarea{
+	padding:25px;
+
+}
+
+#contact .form-group:hover{
+	border-color: #FED136;
+}
+
+/*************Footer***********/
+#footer{
+
+}
+
+#footer .content{
+	padding:20px 0px;
+}
+
+#footer span{
+	line-height:50px;
+}
+#footer a{
+	color:#FED136;
+	line-height:50px;
 }
